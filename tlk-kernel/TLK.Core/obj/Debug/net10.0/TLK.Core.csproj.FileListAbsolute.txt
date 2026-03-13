@@ -12,3 +12,4 @@ C:\projects\toolpath-logic-kernel\tlk-kernel\TLK.Core\obj\Debug\net10.0\refint\T
 C:\projects\toolpath-logic-kernel\tlk-kernel\TLK.Core\obj\Debug\net10.0\TLK.Core.pdb
 C:\projects\toolpath-logic-kernel\tlk-kernel\TLK.Core\obj\Debug\net10.0\TLK.Core.genruntimeconfig.cache
 C:\projects\toolpath-logic-kernel\tlk-kernel\TLK.Core\obj\Debug\net10.0\ref\TLK.Core.dll
+C:\projects\toolpath-logic-kernel\tlk-kernel\TLK.Core\obj\Debug\net10.0\TLK.Core.sourcelink.json
