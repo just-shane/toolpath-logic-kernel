@@ -1,0 +1,47 @@
+{
+  "name": "Toolpath_Logic_Kernel_Command",
+  "description": "A sequence of machining operations for a multi-channel CNC lathe.",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "nodes": {
+        "type": "object",
+        "description": "A dictionary of nodes representing the operations. Keys are unique strings (e.g., node_1).",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "type_": {
+              "type": "string",
+              "enum": ["MachineNode", "TurnCycleNode", "SyncNode"]
+            },
+            "custom": {
+              "type": "object",
+              "properties": {
+                "machine_model": { "type": "string" },
+                "tool_call": { "type": "string" },
+                "target_dia": { "type": "string" },
+                "end_z": { "type": "string" },
+                "sync_number": { "type": "string" }
+              }
+            }
+          },
+          "required": ["type_", "custom"]
+        }
+      },
+      "connections": {
+        "type": "array",
+        "description": "An array of objects defining the logical flow from node to node.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "out": { "type": "array", "items": { "type": "string" }, "description": "['node_id', 'port_name']" },
+            "in": { "type": "array", "items": { "type": "string" }, "description": "['node_id', 'port_name']" }
+          },
+          "required": ["out", "in"]
+        }
+      }
+    },
+    "required": ["nodes", "connections"]
+  }
+}

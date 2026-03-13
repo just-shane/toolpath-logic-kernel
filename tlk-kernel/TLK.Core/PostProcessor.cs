@@ -47,6 +47,9 @@ namespace TLK.Core
             program.AppendLine("%");
 
             Console.WriteLine(program.ToString());
+            // Write it to a physical file in the root folder
+            System.IO.File.WriteAllText("../citizen_output.nc", program.ToString());
+            Console.WriteLine(">>> G-Code successfully saved to citizen_output.nc");
         }
     }
 }

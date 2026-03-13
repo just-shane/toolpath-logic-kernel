@@ -16,9 +16,9 @@
 ## Milestone 3: The G-Code Post (The Output)
 - [x] Map the validated nodes to specific string formats (e.g., `TurnCycleNode` -> `G1 Z-0.500`).
 - [x] Output a basic, two-channel text file formatted for the Citizen L20.
-- [ ] Run a test compile to visually verify the `!1L1` sync codes line up perfectly.
+- [x] Run a test compile to visually verify the `!1L1` sync codes line up perfectly.
 
 ## Milestone 4: The AI Bridge (The End Goal)
-- [ ] Create a rigid JSON schema template for the AI to follow.
-- [ ] Prompt an LLM to generate a simple turning operation using our schema.
-- [ ] Feed the AI-generated JSON directly into the C# engine to prove we can generate crash-free G-code entirely from text.
+- [x] Create a rigid JSON schema template for the AI to follow.
+- [x] Prompt an LLM to generate a simple turning operation using our schema.
+- [x] Feed the AI-generated JSON directly into the C# engine to prove we can generate crash-free G-code entirely from text.
